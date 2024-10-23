@@ -79,3 +79,126 @@
 
 * Create a series of visualizations and reports that clearly communicate the insights derived from the data analysis to stakeholders.
 * Provide actionable insights and recommendations based on the analysis to guide decision-making in real estate investment or wine production and marketing.
+
+# Methodology
+
+## Linear Regression - Real State.csv
+
+### Data Loading:
+
+* Loaded the "Real Estate.xlsx" dataset containing real estate transaction information.
+
+### Data Exploration:
+
+* Reviewed the first few rows of the dataset to understand its structure and content.
+* Checked for missing values and data types to ensure data quality.
+
+### Descriptive Statistics:
+
+* Calculated descriptive statistics for each attribute to gain insights into the real estate data.
+
+### Data Visualization:
+
+* Created a scatter plot to visualize the relationship between house prices and the distance to the nearest MRT station.
+* Generated a bar chart to show the distribution of houses based on the number of convenience stores nearby.
+
+### Linear Regression Analysis:
+
+* Utilized linear regression to predict house prices based on factors like house age, distance to MRT stations, and number of convenience stores.
+* Split the data into training and testing sets.
+* Trained the linear regression model using the training data and evaluated its performance on the test data.
+
+## Logistic Regression - Wine.csv
+
+### Data Loading:
+
+* Loaded the "Wine.csv" dataset containing chemical properties of wines.
+
+### Data Exploration:
+
+
+* Reviewed the first few rows of the dataset to understand its structure and content.
+* Checked for missing values and data types to ensure data quality.
+
+### Descriptive Statistics:
+
+* Calculated descriptive statistics (mean, median, standard deviation, etc.) for each attribute to understand the distribution of chemical properties.
+
+### Data Visualization:
+
+* Created a box plot for each chemical property to visualize the spread of data and identify any outliers.
+
+### Linear Regression Analysis:
+
+* Applied linear regression to predict wine quality based on chemical properties.
+* Split the data into training and testing sets.
+* Trained the model using the training data and evaluated its performance on the test data.
+
+# Results
+
+# Discussions
+
+## Real Estate Dataset (Real Estate.csv):
+
+**Regression Method**: Linear Regression
+
+**Results**:
+
+* Linear regression models the relationship between predictors like house age, distance to the nearest MRT station, number of convenience stores, etc., and the house price per unit area.
+* The model predicts house prices based on the given features.
+
+**Limitations**:
+
+* Linear regression assumes a linear relationship between the features and the target variable, which may not always hold.
+* It may not capture complex relationships in the data without feature engineering or using more advanced models.
+
+## Wine Dataset (Wine.csv):
+
+**Regression Method**: Regression analysis on wine quality or price
+
+**Results**:
+
+* Regression analysis could predict wine quality or price based on features like acidity levels, residual sugar, etc.
+* The model aims to understand how these features affect the wine's quality or price.
+
+**Limitations**:
+
+* Wine quality or price may be influenced by a wide range of factors beyond the ones provided in the dataset.
+* Non-linear relationships between features and wine quality may not be captured by simple linear regression models.
+
+### Comparison
+
+**Data Characteristics**:
+
+* The real estate dataset deals with pricing of properties, while the wine dataset focuses on quality or price of wines.
+* Real estate data may have more diverse features influencing prices (location, amenities), while wine data may focus more on chemical composition.
+
+**Regression Methods**:
+
+* Linear regression is a common choice for both datasets, but more complex models like polynomial regression or decision tree regression could be considered for the wine dataset.
+
+**Interpretability**:
+
+* Linear regression provides straightforward interpretations of feature coefficients, which can be valuable in real estate analysis.
+
+**Performance**:
+
+* The performance of the regression models will depend on the quality and quantity of data, feature selection, and the relationship between features and the target variable.
+
+### Limitations
+
+**Feature Selection**:
+
+* Limited features in the datasets may restrict the models' ability to capture the full complexity of the underlying relationships.
+
+**Overfitting**:
+
+* Including irrelevant features or using overly complex models can lead to overfitting, especially in datasets with limited samples.
+
+**Assumptions**:
+
+* Linear regression assumes a linear relationship between features and the target variable, which may not be valid in all cases.
+
+**Dataset Size**:
+
+* Small datasets may limit the model's ability to generalize well to unseen data.
