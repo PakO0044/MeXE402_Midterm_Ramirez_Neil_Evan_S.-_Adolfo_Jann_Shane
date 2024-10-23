@@ -201,3 +201,10 @@
 **Dataset Size**:
 
 * Small datasets may limit the model's ability to generalize well to unseen data.
+
+# References:
+
+* https://www.kaggle.com/code/shirokaito1412/real-estate-prediction
+* https://www.kaggle.com/code/kavishahaswani/eda-and-linear-regression/notebook
+* 
+
