@@ -134,7 +134,6 @@
 * Split the data into training and testing sets.
 * Trained the model using the training data and evaluated its performance on the test data.
 
-# Results
 
 # Discussions
 
