@@ -206,5 +206,5 @@
 
 * https://www.kaggle.com/code/shirokaito1412/real-estate-prediction
 * https://www.kaggle.com/code/kavishahaswani/eda-and-linear-regression/notebook
-* 
+* https://www.kaggle.com/code/d4rklucif3r/red-wine-quality-eda-models
 
