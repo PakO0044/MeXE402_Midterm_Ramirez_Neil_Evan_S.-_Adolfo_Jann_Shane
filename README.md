@@ -99,6 +99,9 @@
 
 ### Data Visualization:
 
+* Visualized the distribution of house prices using a plot histogram.
+* Explored the relationhips between variables by the use of pairplot.
+* Encoded a heat map to show the correlation matrix of the features in the dataset.
 * Created a scatter plot to visualize the relationship between house prices and the distance to the nearest MRT station.
 * Generated a bar chart to show the distribution of houses based on the number of convenience stores nearby.
 
@@ -108,7 +111,10 @@
 * Split the data into training and testing sets.
 * Trained the linear regression model using the training data and evaluated its performance on the test data.
 
+
+
 ## Logistic Regression - Wine.csv
+
 
 ### Data Loading:
 
@@ -126,7 +132,10 @@
 
 ### Data Visualization:
 
-* Created a box plot for each chemical property to visualize the spread of data and identify any outliers.
+* Printed out the descriptive statistics of the dataset using describe() method to get an overview of the numerical features like mean, standard deviation, minimum, maximum, and quartiles.
+* Created a pair plot for each chemical property to visualize the spread of data and identify any outliers.
+* Investigated the relationships between numerical variables using a heat map.
+* Generated a scatter plots visualizing the features affecting the color of the wine.
 
 ### Linear Regression Analysis:
 
