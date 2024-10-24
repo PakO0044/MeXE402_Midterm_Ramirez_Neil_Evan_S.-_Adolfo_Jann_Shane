@@ -152,64 +152,43 @@
 
 **Results**:
 
-* Linear regression models the relationship between predictors like house age, distance to the nearest MRT station, number of convenience stores, etc., and the house price per unit area.
-* The model predicts house prices based on the given features.
+* It is evident that variables such as house age, distance to the nearest MRT station, and the number of convenience stores have a significant impact on the unit area house price.
+* The linear regression model built can explain the variation in house prices well, as indicated by a high coefficient of determination (R-squared) value.
+* Using evaluation metrics like R-squared, mean absolute error, and mean squared error helps in assessing how accurately the model can predict house prices.
 
 **Limitations**:
 
-* Linear regression assumes a linear relationship between the features and the target variable, which may not always hold.
-* It may not capture complex relationships in the data without feature engineering or using more advanced models.
+* The linear regression model is based on certain assumptions, including the assumption of a linear relationship between independent and dependent variables. If these assumptions are not met, the interpretability of the model results may be compromised.
+* The data used may have limitations in terms of representation and quality. For instance, data scarcity or incompleteness could affect the model's reliability.
+* There is a possibility that there are other factors not included in the model but may have a significant impact on house prices. Adding additional variables could enhance the model's predictive power.
 
 ## Wine Dataset (Wine.csv):
 
-**Regression Method**: Regression analysis on wine quality or price
+**Regression Method**: Regression analysis on wine color
 
 **Results**:
+* **Data Loading and Exploration**: The initial data loading and exploration phase revealed crucial information about the dataset, such as the features included, their data types, and the presence of any missing values. This step is essential for understanding the underlying structure of the data before proceeding with the analysis.
 
-* Regression analysis could predict wine quality or price based on features like acidity levels, residual sugar, etc.
-* The model aims to understand how these features affect the wine's quality or price.
+* The examination of features like acidity levels, sulfur dioxide content, alcohol percentage, and quality ratings provides a comprehensive overview of the wine characteristics present in the dataset. Understanding these features is crucial for building a predictive model using logistic regression.
+* The logistic regression model was trained using the features to predict the color of the wine. Evaluation metrics like accuracy, precision, recall, and F1 score, along with the ROC curve and AUC, were used to assess the model's performance. These metrics help in understanding how well the model predicts the color of the wine based on the input features.
+* By analyzing the coefficients of the logistic regression model, it is possible to understand the impact of each feature on predicting the color of the wine. This insight can be valuable for wine producers and enthusiasts to understand the factors that contribute to the color of a wine.
+
 
 **Limitations**:
+* Logistic regression assumes a linear relationship between the independent variables and the log-odds of the dependent variable. If this assumption is violated, the model's performance may be affected.
+* The success of a logistic regression model heavily depends on the selection of relevant features. In this study, the choice of features used for predicting wine color may impact the model's accuracy and generalizability.
+* If the dataset contains imbalanced classes (e.g., one color significantly outweighs the other), the model may be biased towards the majority class. This imbalance could affect the model's ability to accurately predict the color of less represented classes.
+* Overfitting occurs when a model performs well on the training data but poorly on unseen data. Techniques like regularization or cross-validation should be employed to address overfitting issues.
+* The dataset used for analysis may not capture all possible factors influencing wine color. External factors like environmental conditions during grape cultivation or winemaking practices could also play a significant role.
 
-* Wine quality or price may be influenced by a wide range of factors beyond the ones provided in the dataset.
-* Non-linear relationships between features and wine quality may not be captured by simple linear regression models.
 
 ### Comparison
 
-**Data Characteristics**:
-
-* The real estate dataset deals with pricing of properties, while the wine dataset focuses on quality or price of wines.
+* The real estate dataset deals with pricing of properties, while the wine dataset focuses on color of the wines.
 * Real estate data may have more diverse features influencing prices (location, amenities), while wine data may focus more on chemical composition.
-
-**Regression Methods**:
-
 * Linear regression is a common choice for both datasets, but more complex models like polynomial regression or decision tree regression could be considered for the wine dataset.
-
-**Interpretability**:
-
 * Linear regression provides straightforward interpretations of feature coefficients, which can be valuable in real estate analysis.
-
-**Performance**:
-
 * The performance of the regression models will depend on the quality and quantity of data, feature selection, and the relationship between features and the target variable.
-
-### Limitations
-
-**Feature Selection**:
-
-* Limited features in the datasets may restrict the models' ability to capture the full complexity of the underlying relationships.
-
-**Overfitting**:
-
-* Including irrelevant features or using overly complex models can lead to overfitting, especially in datasets with limited samples.
-
-**Assumptions**:
-
-* Linear regression assumes a linear relationship between features and the target variable, which may not be valid in all cases.
-
-**Dataset Size**:
-
-* Small datasets may limit the model's ability to generalize well to unseen data.
 
 # References:
 
